@@ -17,7 +17,7 @@ if classifier.empty():
 
 model = load_model(MODEL_PATH)
 
-labels = ["SK"]   # add more names here if you retrain with more classes
+labels = ["Aliman"]   # add more names here if you retrain with more classes
 
 # ----------------------------------------------------
 # 2) LABEL DECODER FUNCTION (upgraded with confidence check)
