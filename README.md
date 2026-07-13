@@ -39,13 +39,11 @@ A real-time Face Detection and Face Recognition system built using **Python**, *
 
 ## Face Detection
 
-<img src="screenshots/face_detection.png" width="700">
-
----
+<img src="screenshots/face_detected.png" width="700">
 
 ## Face Recognition
 
-<img src="screenshots/face_recognition.png" width="700">
+<img src="screenshots/recognition_result.png" width="700">
 
 ---
 
