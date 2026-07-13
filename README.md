@@ -157,7 +157,19 @@ The application will:
 - Show recognition results in real time
 
 ---
+## Screenshots
 
+### Face Detection
+
+![Face Detection](screenshots/face_detected.png)
+
+### Face Recognition
+
+![Recognition Result](screenshots/recognition_result.png)
+
+### Dataset Collection
+
+![Dataset Collection](screenshots/dataset_collection.png)
 ## Requirements
 
 - Python 3.12
