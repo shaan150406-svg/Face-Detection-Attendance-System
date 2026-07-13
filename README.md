@@ -1,232 +1,140 @@
-# Face Detection and Recognition using Deep Learning
+# 🎭 Face Detection & Recognition using Deep Learning
 
-A real-time Face Detection and Face Recognition system built using **Python**, **OpenCV**, **TensorFlow/Keras**, and an **Android IP Webcam**. The project captures face images, prepares a dataset, trains a deep learning model, and recognizes faces in real time.
+<p align="center">
+  <img src="screenshots/banner.png" alt="Banner" width="100%">
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?logo=opencv)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-DeepLearning-red?logo=keras)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+</p>
+
+A real-time Face Detection and Face Recognition system built using **Python**, **OpenCV**, and **TensorFlow/Keras**. The application detects faces from a live camera feed, recognizes registered users, and displays predictions in real time.
 
 ---
 
-## Features
+## 📌 Features
 
-- Real-time face detection using Haar Cascade Classifier
-- Face image collection using Android IP Webcam
-- Automatic dataset creation
-- Face preprocessing and training data generation
-- Deep learning based face recognition using TensorFlow/Keras
-- Real-time prediction with confidence score
-- Easy to customize for multiple users
+- 🎥 Real-time face detection
+- 🧠 Deep learning based face recognition
+- 📷 Dataset collection using IP Webcam
+- 📂 Automatic dataset preparation
+- ⚡ Fast prediction with confidence score
+- 👨‍💻 Easy to extend for multiple users
+
+---
+
+# 📸 Screenshots
+
+## Dataset Collection
+
+<img src="screenshots/dataset_collection.png" width="700">
+
+---
+
+## Face Detection
+
+<img src="screenshots/face_detection.png" width="700">
+
+---
+
+## Face Recognition
+
+<img src="screenshots/face_recognition.png" width="700">
 
 ---
 
 ## Project Structure
 
-```
+<img src="screenshots/project_structure.png" width="700">
+
+---
+
+## ⚙️ Technologies Used
+
+- Python
+- OpenCV
+- TensorFlow
+- Keras
+- NumPy
+- Android IP Webcam
+
+---
+
+## 📂 Project Structure
+
+```text
 Face_Detection/
 │
-├── collect_data.py                # Collect face images
-├── consolidated_data.py           # Prepare dataset
-├── recognize.py                   # Real-time face recognition
-├── final_model.h5                 # Trained model
+├── data/
+├── images/
+├── screenshots/
+├── collect_data.py
+├── consolidated_data.py
+├── recognize.py
+├── final_model.h5
 ├── haarcascade_frontalface_default.xml
-├── images/                        # Captured face images
-├── data/                          # Processed dataset
-└── README.md
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## Technologies Used
-
-- Python 3.12
-- OpenCV
-- NumPy
-- TensorFlow / Keras
-- Android IP Webcam
-- Haar Cascade Classifier
-
----
-
-## Installation
-
-### Clone the repository
+## 🚀 Installation
 
 ```bash
-git clone https://github.com/yourusername/Face_Detection.git
-cd Face_Detection
-```
+git clone https://github.com/shaan150406-svg/Face-Detection-Attendance-System.git
 
-### Create a virtual environment (Optional)
+cd Face-Detection-Attendance-System
 
-```bash
-python -m venv venv
-```
-
-Activate it
-
-Windows
-
-```bash
-venv\Scripts\activate
-```
-
-Linux / macOS
-
-```bash
-source venv/bin/activate
-```
-
-### Install dependencies
-
-```bash
-pip install opencv-python
-pip install numpy
-pip install tensorflow
-pip install keras
-```
-
-or
-
-```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## How to Use
+## ▶️ Run
 
-### Step 1: Start IP Webcam
-
-1. Install **IP Webcam** on your Android device.
-2. Connect your phone and computer to the same Wi-Fi network.
-3. Start the server in the app.
-4. Copy the IP address shown in the app.
-
-Example:
-
-```
-http://192.168.1.5:8080/shot.jpg
-```
-
-Update the URL variable in the Python files.
-
----
-
-### Step 2: Collect Images
-
-Run
+Collect Dataset
 
 ```bash
 python collect_data.py
 ```
 
-This captures face images and stores them in the `images` folder.
-
----
-
-### Step 3: Prepare Dataset
-
-Run
+Prepare Dataset
 
 ```bash
 python consolidated_data.py
 ```
 
-This processes the collected images and prepares the dataset.
-
----
-
-### Step 4: Train the Model
-
-Train your TensorFlow/Keras model and save it as
-
-```
-final_model.h5
-```
-
----
-
-### Step 5: Run Face Recognition
+Recognize Faces
 
 ```bash
 python recognize.py
 ```
 
-The application will:
-
-- Detect faces
-- Predict the person
-- Display confidence score
-- Show recognition results in real time
-
----
-## Screenshots
-
-### Face Detection
-
-![Face Detection](screenshots/face_detected.png)
-
-### Face Recognition
-
-![Recognition Result](screenshots/recognition_result.png)
-
-### Dataset Collection
-
-![Dataset Collection](screenshots/dataset_collection.png)
-## Requirements
-
-- Python 3.12
-- OpenCV
-- NumPy
-- TensorFlow
-- Keras
-- Android IP Webcam
-
 ---
 
-## Future Improvements
+## 📈 Future Improvements
 
 - Multiple face recognition
-- Face mask detection
-- Face attendance system
+- Face attendance logging
 - Database integration
-- Anti-spoofing detection
-- GPU acceleration
-- Better CNN architecture
+- Anti-spoofing
+- GUI dashboard
+- Cloud deployment
 
 ---
 
-## Troubleshooting
-
-### TensorFlow Import Error
-
-Install a TensorFlow version compatible with your Python version.
-
-### OpenCV Camera Error
-
-- Ensure the IP Webcam server is running.
-- Verify the IP address is correct.
-- Make sure both devices are connected to the same network.
-
-### Model Not Found
-
-Ensure the trained model exists as
-
-```
-final_model.h5
-```
-
----
-
-## License
-
-This project is intended for educational and learning purposes.
-
----
-
-## Author
+## 👨‍💻 Author
 
 **Sk Aminul Irfan**
 
 GitHub: https://github.com/shaan150406-svg
 
----
-
-⭐ If you found this project useful, consider giving the repository a star!
+⭐ Star this repository if you found it useful!
